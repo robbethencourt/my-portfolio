@@ -1,0 +1,309 @@
+a:hover, a:focus {
+	color: #db0a6d;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+	margin: 0;
+	border: none;
+	background: none;
+}
+
+	.navbar-inverse .navbar-brand {
+		color: #acb4bf;
+	}
+
+	.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+		color: #db0a6d;
+	}
+
+	.navbar-inverse .navbar-toggle {
+    	border: none;
+	}
+
+	.navbar-inverse .navbar-collapse {
+		border: none;
+	}
+
+
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    	background: none;
+	}
+
+
+	.navbar-collapse {
+		box-shadow: none;
+	}
+
+		.navbar-right {
+			text-align: right;
+		}
+
+			.navbar-inverse .navbar-nav > li > a , .navbar-inverse .navbar-nav > li > a:visited {
+				color: #acb4bf;
+			}
+
+			.navbar-inverse .navbar-nav > li > a:hover , .navbar-inverse .navbar-nav > li > a:focus {
+				color: #db0a6d;
+			}
+
+
+/* Jumbotron Styles */
+.jumbotron {
+	padding: 5em 0;
+	color: #1f2631;
+	/* text-align: center;
+	background: #1f2631 url(../images/hero.jpg) no-repeat top center; 
+	background-size: cover; */
+	background: none; 
+}
+
+	.jumbotron h1 {
+		overflow: hidden;
+		padding: 0;
+		/* font-size: 5.8em;
+		font-family: 'Permanent Marker', cursive; */
+		font-family: arial;
+		font-size: 20em;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+	.jumbotron p {
+		font-size: 1em;
+	}
+
+	.im-rob {
+		margin-top: -2em;
+		padding: 0 0 3em 0;
+		text-align: center;
+	}
+
+
+/* Section Heading Styles */           
+.section-heading {padding: 2em 1em;}
+            
+    .section-heading h2 {margin: 0 0 1em 0; padding: 0; color: #5e7184; font-size: 1em; border-bottom: dotted 1px #d0d6df;}
+    
+    .section-heading p {padding: 0 0 0 1em; margin: 0; font-size: 0.83em; font-style: italic; border-left: 3px solid #107cb0;}
+
+/* ==================== Gallery Styles ==================== */ 
+.gallery ul {margin: 0; padding: 0;}
+
+    .gallery ul li {display: block; position: relative; overflow: hidden; list-style-type: none; color: #47475c; background: none;}
+    
+    
+        /* Sets the blue background on gallery items to not show until hover listed below */
+        .gallery-header {width: 100%; height: 100%; position: absolute; padding: 2% 5%; color: #fff; opacity: 0; -webkit-transition: 0.35s;}
+        
+            .banner-ul a:hover .gallery-header, .banner-ul a:focus .gallery-header, .gallery-ul a:hover .gallery-header, .gallery-ul a:focus .gallery-header, .gallery-md-ul a:hover .gallery-header, .gallery-md-ul a:focus .gallery-header {background: rgba(219, 10, 109, 0.85); opacity: 1; -webkit-transition: 0.35s; clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);}
+            
+            .banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {margin-left: 0px; -webkit-transition: 0.35s;}
+    
+                .gallery-header h1 {font-size: 2em; margin: 0 0 0 -30px; -webkit-transition: 0.35s;}
+            
+                .gallery-header p {font-size: 0.75em; margin: 2% 0 2% -70px; font-style: italic; -webkit-transition: 0.35s;}
+            
+            .banner-ul img {margin: 0;} /* Takes away default 1em top and bottom margin on the gallery images */
+
+
+/* iPhones (landscape) ----------- */
+@media only screen and (min-width: 560px) {
+    
+    /* ==================== Header Styles ==================== */    
+    .copyright {width: 50%; float: left;}
+
+    .email-and-sn {width: 50%; float: right; text-align: right;}
+    
+    
+    /* ==================== Gallery Styles ==================== */ 
+    .gallery ul li {width: 50%; float: left;}
+    
+    
+    /* ==================== Article Heading Styles ==================== */
+    /* Design & Development */
+    .article-header-img-contaianer-dd {}
+    
+    .article-header-description-dd {}
+    
+        .article-description-ul-dd {}
+        
+    .article-content-container {}
+    
+    .article-design-and-development-content {clear: left; width: 67%; margin: 0 0 0 5%; padding: 2em 0;}
+    
+    .logo-display {}
+    
+    .rwd-displays {max-width: 90%; margin: 2em 0 2em 5%;}
+    
+    
+    .cover-art-movie-synopsis img {width: 20%; float: right; margin: 0 0 0 7%;}
+    
+    
+/* Meat Deer */
+    
+    .gallery ul.gallery-md-ul li {width: 90%; margin: 2em 5%;}
+    
+    .meat-deer-article {width: 90%;}
+    
+    
+    /* ==================== Footer Styles ==================== */    
+    .footer-nav li {margin: 2% 3% 2% 0;}
+    
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) {
+    
+/* Header */
+    
+    .header-logo {width: 40%; float: left;}
+
+        header img {width: 60px;}
+
+    #main-nav-toggle {display: none;}
+    
+    .hide {display: block;}
+    
+        .main-nav-toggle-container {color: #acb4bf;}
+    
+    #main-nav-container {width: inherit; overflow: visible; float: right; padding: 0 5% 0 0;}
+    
+        .main-nav {margin: 0; padding: 0; text-align: right;}
+    
+            .main-nav li {margin: 1em 0 1em 2em; float: left; font-size: .85em;}
+    
+    
+    
+    aside {width: 27.5%; float: right;}
+
+   
+/* Design & Development */    
+   
+    .article-header-img-contaianer-dd {height: 235px;}
+    
+    .article-content {width: 70%; padding: 0 15%;}
+   
+    
+/* Blog */
+    
+        .blog-content {width: 62.5%; float: left;}
+    
+        .blog aside {margin-top: 4em;}
+    
+    
+/* Meat Deer */
+    
+    .md-the-players div {width: 40%; padding: 0 5%; float: left;}
+    
+    .meat-deer-article {width: 70%;}
+
+}
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 900px) {
+    
+    /* ==================== Section Heading Styles ==================== */           
+    .section-heading {padding: 8em 1em;}
+    
+    
+/* Meat Deer */
+    
+    .gallery ul.gallery-md-ul li:nth-of-type(even) {width: 42.5%; margin: 2em 2.5% 2em 5%;}
+    
+    .gallery ul.gallery-md-ul li:nth-of-type(odd) {width: 42.5%; margin: 2em 5% 2em 2.5%;}
+    
+    .gallery ul.gallery-md-ul li:first-of-type {width: 90%; margin: 2em 5%;}
+
+    .meat-deer-article {width: 60%;}
+    
+}
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 1024px) {    
+    
+    /* Home Page */
+    .home-page {padding: 10% 20% 15% 20%;}
+    
+    
+    /* ==================== Gallery Styles ==================== */    
+    .gallery ul li {width: 50%;}
+    
+    
+    /* ==================== Article Heading Styles ==================== */
+    /* Design & Development */
+    .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 10%; margin-left: 10%;}
+    
+    .iphone-display img {float: left; width: 33%;}
+    
+    
+    /* Blog */
+    
+        .blog-content {width: 52.5%; margin-left: 10%;}
+    
+    
+/* Meat Deer */
+
+    .meat-deer-article {width: 50%; padding-left: 10%;}
+    
+}
+
+
+
+/* Large Displays ----------- */
+@media only screen and (min-width : 1400px) {
+        
+    
+    /* ==================== Article Heading Styles ==================== */
+    /* Design & Development */
+    .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 20%; margin-left: 20%;}
+    
+    
+    /* Blog */
+    
+    .blog-content {width: 37.5%; margin-left: 25%;}
+    
+}
+
+
+
+/* Large Displays ----------- */
+@media only screen and (min-width : 1700px) {
+    
+    /* Home Page */
+    .home-page {padding: 10% 25% 15% 25%;}
+    
+    
+/* Meat Deer */
+    .meat-deer-article {width: 40%; padding-left: 20%;}
+    
+}
+
+
+
+/* Large Displays ----------- */
+@media only screen and (min-width : 1920px) {
+    
+    /* Home Page */
+    .home-page {padding: 10% 30% 15% 30%;}
+    
+    
+    /* ==================== Article Heading Styles ==================== */
+    /* Design & Development */
+    .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 25%; margin-left: 25%;}
+    
+    
+    /* Blog */
+    
+    .blog-content {width: 32.5%; margin-left: 30%;}
+    
+}
