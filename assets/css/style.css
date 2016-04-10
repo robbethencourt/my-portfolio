@@ -1,4 +1,13 @@
 /* global styles */
+body {
+	background: #F0F3F7;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.8em;
+	color: #65707a;
+}
 
 a:link, a:visited {
 	transition: 0.3s;
@@ -116,7 +125,7 @@ img {
 /* Gallery Styles */ 
 .gallery ul {margin: 0; padding: 0;}
 
-    .gallery ul li {display: block; position: relative; overflow: hidden; list-style-type: none; color: #47475c; background: none;}
+    .gallery ul li {display: block; position: relative; overflow: hidden; margin-bottom: 1em; list-style-type: none; color: #47475c; background: none;}
     
     
         /* Sets the blue background on gallery items to not show until hover listed below */
@@ -131,6 +140,24 @@ img {
                 .gallery-header p {font-size: 1em; margin: 2% 0 2% -70px; font-style: italic; -webkit-transition: 0.35s;}
             
             .banner-ul img {margin: 0;} /* Takes away default 1em top and bottom margin on the gallery images */
+
+
+/* about */
+.percent-circle {
+	margin: -1.5em auto 1em auto;
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+    padding: 43px 10px 25px 10px;
+
+    border: 17px solid #db0a6d;
+    color: #1f2631;
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    font-weight: bold;
+}
 
 
 footer {
