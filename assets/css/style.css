@@ -1,4 +1,12 @@
+/* global styles */
+
+a:link, a:visited {
+	transition: 0.3s;
+    color: #36a6dd;
+}
+
 a:hover, a:focus {
+	transition: 0.3s;
 	color: #db0a6d;
 }
 
@@ -28,6 +36,10 @@ img {
 	.navbar-inverse .navbar-toggle {
     	border: none;
 	}
+
+		.navbar-inverse .navbar-toggle .icon-bar {
+			background: #acb4bf;
+		}
 
 	.navbar-inverse .navbar-collapse {
 		border: none;
@@ -59,13 +71,13 @@ img {
 
 /* Jumbotron Styles */
 .jumbotron {
-	padding: 5em 0;
+	padding: 5em 0 2em 0;
 	color: #1f2631;
 	/* text-align: center;
 	background: #1f2631 url(../images/hero.jpg) no-repeat top center; 
 	background-size: cover; 
 	border-bottom: 1px solid #db0a6d; */
-	background: none; 
+	background: #fff;
 }
 
 	.jumbotron h1 {
@@ -77,6 +89,9 @@ img {
 		font-size: 20em;
 		font-weight: bold;
 		white-space: nowrap;
+		background: #1f2631 url(../images/polygon-bg.jpg) no-repeat top center;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text; 
 	}
 
 	.jumbotron p {
@@ -91,11 +106,12 @@ img {
 
 
 /* Section Heading Styles */           
-.section-heading {padding: 2em 1em;}
+.section-heading {padding: 1em;}
             
     .section-heading h2 {margin: 0 0 1em 0; padding: 0; color: #5e7184; font-size: 2em; font-weight: bold; /* border-bottom: dotted 1px #d0d6df; */}
     
-    .section-heading p {padding: 0 0 0 1em; margin: 0; font-size: 5em; font-style: italic; border-left: 3px solid #db0a6d;}
+    .section-heading p {padding: 0 0 0 1em; margin: 0; font-size: 2em; /font-style: italic; border-left: 3px solid #db0a6d;}
+
 
 /* Gallery Styles */ 
 .gallery ul {margin: 0; padding: 0;}
@@ -117,21 +133,54 @@ img {
             .banner-ul img {margin: 0;} /* Takes away default 1em top and bottom margin on the gallery images */
 
 
+footer {
+	margin-top: 10em;
+	color: #acb4bf;
+	background: #1f2631;
+}
+
+	footer a h3, footer a:visited h3 {
+		transition: 0.3s;
+		padding: 2em 0;
+		text-align: center;
+	}
+
+	footer a:hover h3, footer a:hover h3 {
+		transition: 0.3s;
+		color: #acb4bf;
+		background: #db0a6d;
+	}
+
+	a.back-to-top:hover, a.back-to-top:focus {
+		text-decoration: none;
+	}
+
+		.social-networks-ul a, .social-networks-ul a:visited {
+			color: #acb4bf;
+		}
+
+		.social-networks-ul a:hover, .social-networks-ul a:focus {
+			color: #db0a6d;
+		}
+
+	.social-networks-ul {
+		margin: 2em 0;
+	}
+
+		.social-networks-ul li {
+			padding-bottom: 1em;
+		}
+
+
 
 /* iPhones (landscape) ----------- */
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 560px) {    
     
-    /* ==================== Header Styles ==================== */    
-    .copyright {width: 50%; float: left;}
-
-    .email-and-sn {width: 50%; float: right; text-align: right;}
-    
-    
-    /* ==================== Gallery Styles ==================== */ 
+    /* Gallery Styles */ 
     .gallery ul li {width: 50%; float: left;}
     
     
-    /* ==================== Article Heading Styles ==================== */
+    /* Article Heading Styles */
     /* Design & Development */
     .article-header-img-contaianer-dd {}
     
@@ -146,11 +195,6 @@ img {
     .logo-display {}
     
     .rwd-displays {max-width: 90%; margin: 2em 0 2em 5%;}
-    
-   
-    
-    /* ==================== Footer Styles ==================== */    
-    .footer-nav li {margin: 2% 3% 2% 0;}
     
 }
 
@@ -173,6 +217,20 @@ img {
     
     /* ==================== Section Heading Styles ==================== */           
     .section-heading {padding: 12em 1em;}
+    
+}
+
+
+
+/* 992px ----------- */
+@media only screen and (min-width: 992px) {
+    
+    /* footer */
+    footer .row {
+    	margin: 2em 0 1em 0;
+    }
+
+    .social-networks-ul {margin: 0; text-align: right;}
     
 }
 
