@@ -106,7 +106,7 @@ img {
 
 
 /* Section Heading Styles */           
-.section-heading {padding: 1em;}
+.section-heading {padding: 1em 0 7em 0;}
             
     .section-heading h2 {margin: 0 0 1em 0; padding: 0; color: #5e7184; font-size: 2em; font-weight: bold; /* border-bottom: dotted 1px #d0d6df; */}
     
