@@ -177,7 +177,7 @@ footer {
 @media only screen and (min-width: 560px) {    
     
     /* Gallery Styles */ 
-    .gallery ul li {width: 50%; float: left;}
+    .gallery ul li {float: left; width: 48%; margin: 1%;}
     
     
     /* Article Heading Styles */
@@ -237,12 +237,7 @@ footer {
 
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-width : 1024px) {    
-    
-    
-    /* Gallery Styles */    
-    .gallery ul li {width: 48%; margin: 1%}
-    
+@media only screen and (min-width : 1024px) {     
     
     /* Article Heading Styles */
     /* Design & Development */
