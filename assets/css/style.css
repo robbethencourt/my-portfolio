@@ -126,9 +126,9 @@ img {
             
             .banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {margin-left: 0px; -webkit-transition: 0.35s;}
     
-                .gallery-header h1 {font-size: 2em; margin: 0 0 0 -30px; -webkit-transition: 0.35s;}
+                .gallery-header h1 {margin: 0 0 0 -30px; font-size: 5em; font-weight: bold; -webkit-transition: 0.35s;}
             
-                .gallery-header p {font-size: 0.75em; margin: 2% 0 2% -70px; font-style: italic; -webkit-transition: 0.35s;}
+                .gallery-header p {font-size: 1em; margin: 2% 0 2% -70px; font-style: italic; -webkit-transition: 0.35s;}
             
             .banner-ul img {margin: 0;} /* Takes away default 1em top and bottom margin on the gallery images */
 
@@ -216,7 +216,7 @@ footer {
 @media only screen and (min-width: 900px) {
     
     /* ==================== Section Heading Styles ==================== */           
-    .section-heading {padding: 12em 1em;}
+    .section-heading {padding: 7em 0 12em 0;}
     
 }
 
@@ -241,7 +241,7 @@ footer {
     
     
     /* Gallery Styles */    
-    .gallery ul li {width: 33.3%;}
+    .gallery ul li {width: 48%; margin: 1%}
     
     
     /* Article Heading Styles */
