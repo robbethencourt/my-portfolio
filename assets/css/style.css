@@ -181,6 +181,16 @@ img {
     font-weight: bold;
 }
 
+.about-hobbies {
+	padding: 3em 0 7em 0;
+}
+
+	.about-hobbies p {
+		padding: 2em 0;
+		text-align: center;
+		font-style: italic;
+	}
+
 
 footer {
 	margin-top: 10em;
