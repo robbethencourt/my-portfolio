@@ -27,6 +27,24 @@ img {
 	text-decoration: line-through;
 }
 
+.form-control:focus {
+	border: none;
+	box-shadow: 0 0 8px rgba(219, 10, 109, 1);
+}
+
+.btn-custom {
+	transition: 0.3s;
+	color: #fff;
+	background: #1f2631 url(../images/polygon-bg.jpg) no-repeat top center;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+	transition: 0.3s;
+	color: #fff;
+	background: #1f2631 url(../images/polygon-bg.jpg) no-repeat 5px center;
+}
+
+
 /* Navbar Styles */
 .navbar {
 	margin: 0;
@@ -119,7 +137,11 @@ img {
             
     .section-heading h2 {margin: 0 0 1em 0; padding: 0; color: #5e7184; font-size: 2em; font-weight: bold; /* border-bottom: dotted 1px #d0d6df; */}
     
-    .section-heading p {padding: 0 0 0 1em; margin: 0; font-size: 2em; /font-style: italic; border-left: 3px solid #db0a6d;}
+    .section-heading p {padding: 0 0 0 1em; margin: 0; color: #1f2631; font-size: 2em; font-style: italic; border-left: 3px solid #db0a6d;}
+
+.contact-sh {
+	padding-bottom: 3em; /* this is only for the contact page. Otherwise the form would push too far below. */
+}
 
 
 /* Gallery Styles */ 
@@ -170,12 +192,13 @@ footer {
 		transition: 0.3s;
 		padding: 2em 0;
 		text-align: center;
+		background: url(../images/polygon-bg.jpg) no-repeat top center;
 	}
 
 	footer a:hover h3, footer a:hover h3 {
 		transition: 0.3s;
 		color: #acb4bf;
-		background: #db0a6d;
+		background: url(../images/polygon-bg.jpg) no-repeat bottom center;
 	}
 
 	a.back-to-top:hover, a.back-to-top:focus {
@@ -244,6 +267,10 @@ footer {
     
     /* ==================== Section Heading Styles ==================== */           
     .section-heading {padding: 7em 0 12em 0;}
+
+    .contact-sh {
+	padding-bottom: 3em; /* this is only for the contact page. Otherwise the form would push too far below. */
+}
     
 }
 
