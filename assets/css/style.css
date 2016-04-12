@@ -1,6 +1,11 @@
 /* global styles */
 body {
 	background: #F0F3F7;
+	color: #65707a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #5e7184;
 }
 
 p {
@@ -152,6 +157,53 @@ img {
 .contact-sh {
 	padding-bottom: 3em; /* this is only for the contact page. Otherwise the form would push too far below. */
 }
+
+
+/* Technology Used */
+.tech-used {
+	margin: 0 0 5em 0;
+	padding: 3em 0 4em 0;
+	color: #fff;
+	background: #1f2631;
+}
+
+	.tech-used p, .tech-used h2, .tech-used h3, .tech-used h5 {
+		color: #fff;
+	}
+
+	.tech-used > h2 {
+		padding: 0 0 2em 0;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.tech-used ul {
+		padding-bottom: 3em;
+	}
+
+	.tech-used-html {
+	}
+
+	.tech-used-css {
+	}
+
+	.tech-used-js {
+	}
+
+	.tech-used-php {
+	}
+
+	.fa {
+		font-size: 2em;
+	}
+
+	.progress {
+		height: 3px;
+	}
+
+		.progress-bar {
+			background: #db0a6d;
+		}
 
 
 /* Gallery Styles */ 
