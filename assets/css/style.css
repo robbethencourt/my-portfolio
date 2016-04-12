@@ -27,9 +27,19 @@ img {
 	text-decoration: line-through;
 }
 
+.form-control {
+	background: none;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #db0a6d;
+	border-radius: 0;
+}
+
 .form-control:focus {
 	border: none;
-	box-shadow: 0 0 8px rgba(219, 10, 109, 1);
+	box-shadow: none;
+	border-bottom: 3px solid #db0a6d;
+	background: #E4EBF5;
 }
 
 .btn-custom {
@@ -49,7 +59,7 @@ img {
 .navbar {
 	margin: 0;
 	border: none;
-	background: #fff;
+	background: rgba(255,255,255,0.95);
 }
 
 	.navbar-inverse .navbar-brand {
