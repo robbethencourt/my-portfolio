@@ -1,16 +1,16 @@
 /* global styles */
 body {
 	background: #F0F3F7;
-	color: #65707a;
+	/* color: #65707a; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #5e7184;
+	/* color: #5e7184; */
 }
 
 p {
-	font-size: 1.2em;
-	line-height: 1.8em;
+	font-size: 1em;
+	line-height: 2em;
 	color: #65707a;
 }
 
@@ -47,7 +47,7 @@ img {
 	background: #E4EBF5;
 }
 
-.btn-custom {
+.btn-custom, a.btn-custom {
 	transition: 0.3s;
 	color: #fff;
 	background: #1f2631 url(../images/polygon-bg.jpg) no-repeat top center;
@@ -105,7 +105,7 @@ img {
 				color: #acb4bf;
 			}
 
-			.navbar-inverse .navbar-nav > li > a:hover , .navbar-inverse .navbar-nav > li > a:focus {
+			.navbar-inverse .navbar-nav > li > a:hover , .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a.active {
 				color: #db0a6d;
 				text-decoration: line-through;
 			}
@@ -159,54 +159,11 @@ img {
 }
 
 
-/* Technology Used */
-.tech-used {
-	margin: 0 0 5em 0;
-	padding: 3em 0 4em 0;
+/* Gallery Styles */
+.gallery h1, .gallery p {
 	color: #fff;
-	background: #1f2631;
 }
 
-	.tech-used p, .tech-used h2, .tech-used h3, .tech-used h5 {
-		color: #fff;
-	}
-
-	.tech-used > h2 {
-		padding: 0 0 2em 0;
-		text-align: center;
-		font-weight: bold;
-	}
-
-	.tech-used ul {
-		padding-bottom: 3em;
-	}
-
-	.tech-used-html {
-	}
-
-	.tech-used-css {
-	}
-
-	.tech-used-js {
-	}
-
-	.tech-used-php {
-	}
-
-	.fa {
-		font-size: 2em;
-	}
-
-	.progress {
-		height: 3px;
-	}
-
-		.progress-bar {
-			background: #db0a6d;
-		}
-
-
-/* Gallery Styles */ 
 .gallery ul {margin: 0; padding: 0;}
 
     .gallery ul li {display: block; position: relative; overflow: hidden; margin-bottom: 1em; list-style-type: none; color: #47475c; background: none;}
@@ -227,30 +184,110 @@ img {
 
 
 /* about */
-.percent-circle {
-	margin: -1.5em auto 1em auto;
-    border-radius: 50%;
-
-    width: 200px;
-    height: 200px;
-    padding: 43px 10px 25px 10px;
-
-    border: 17px solid #db0a6d;
-    color: #1f2631;
-    text-align: center;
-    font-size: 4em;
-    font-style: italic;
-    font-weight: bold;
+/* Technology Used */
+.tech-used {
+	margin: 0 0 5em 0;
+	padding: 7em 0 4em 0;
+	color: #fff;
+	background: #1f2631;
 }
 
-.about-hobbies {
+	.tech-used .row > div {
+		padding-bottom: 5em;
+	}
+
+	.tech-used p, .tech-used h2, .tech-used h3, .tech-used h5 {
+		color: #fff;
+	}
+
+	.tech-used > h2 {
+		padding: 0 0 2em 0;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.tech-used ul {
+		padding-bottom: 3em;
+	}
+
+	.fa {
+		font-size: 2em;
+	}
+
+	.progress {
+		height: 3px;
+	}
+
+		.progress-bar {
+			background: #db0a6d;
+		}
+
+/* ever expanding list */
+.ever-expanding {
 	padding: 3em 0 7em 0;
 }
 
-	.about-hobbies p {
-		padding: 2em 0;
-		text-align: center;
-		font-style: italic;
+	.ever-expanding h2 {
+		padding: 2em 0 3em 0;
+	}
+
+	.percent-circle {
+		margin: 2em auto 1em auto;
+	    border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+	    padding: 43px 10px 25px 10px;
+	    border: 17px solid #db0a6d;
+	    color: #1f2631;
+	    text-align: center;
+	    font-size: 4em;
+	    font-style: italic;
+	    font-weight: bold;
+	}
+
+.clear-expert {
+	padding-top: 2em;
+}
+
+/* hobbies */
+.about-hobbies {
+	padding: 3em 0 7em 0;
+	background: #fff;
+}
+
+	.about-hobbies-row {
+		padding: 20em 0;
+		position: relative;
+		overflow: hidden;
+		border-bottom: 1px solid #EBEFF5;
+	}
+
+	.about-hobbies-row:last-of-type {
+		border-bottom: none;
+	}
+
+		.about-hobbies-h3-bg {
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			color: #EBEFF5;
+			font-size: 45em;
+			font-weight: bold;
+			line-height: 1em;
+			white-space: nowrap;
+		}
+
+		.about-hobbies-row img.meat-deer-ah {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+	.about-hobbies h2 {
+		padding: 2em 0 0 0;
 	}
 
 
