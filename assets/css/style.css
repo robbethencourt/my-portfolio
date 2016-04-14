@@ -1,11 +1,6 @@
 /* global styles */
 body {
-	background: #F0F3F7;
-	/* color: #65707a; */
-}
-
-h1, h2, h3, h4, h5, h6 {
-	/* color: #5e7184; */
+	background: #fff;
 }
 
 p {
@@ -115,18 +110,12 @@ img {
 .jumbotron {
 	padding: 5em 0 2em 0;
 	color: #1f2631;
-	/* text-align: center;
-	background: #1f2631 url(../images/hero.jpg) no-repeat top center; 
-	background-size: cover; 
-	border-bottom: 1px solid #db0a6d; */
 	background: #fff;
 }
 
 	.jumbotron h1 {
 		overflow: hidden;
 		padding: 0;
-		/* font-size: 5.8em;
-		font-family: 'Permanent Marker', cursive; */
 		font-family: arial;
 		font-size: 20em;
 		font-weight: bold;
@@ -148,45 +137,95 @@ img {
 
 
 /* Section Heading Styles */           
-.section-heading {padding: 1em 0 7em 0;}
-            
-    .section-heading h2 {margin: 0 0 1em 0; padding: 0; color: #5e7184; font-size: 2em; font-weight: bold; /* border-bottom: dotted 1px #d0d6df; */}
-    
-    .section-heading p {padding: 0 0 0 1em; margin: 0; color: #1f2631; font-size: 2em; font-style: italic; border-left: 3px solid #db0a6d;}
-
-.contact-sh {
-	padding-bottom: 3em; /* this is only for the contact page. Otherwise the form would push too far below. */
+.section-heading {
+	padding: 7em 0;
+	background: #F0F3F7;
 }
+            
+    .section-heading h2 {
+    	margin: 0 0 1em 0; 
+    	padding: 0; 
+    	color: #5e7184; 
+    	font-size: 2em; 
+    	font-weight: bold;
+    }
+    
+    .section-heading p {
+    	padding: 0 0 0 1em; 
+    	margin: 0; 
+    	color: #1f2631; 
+    	font-size: 2em; 
+    	font-style: italic; 
+    	border-left: 3px solid #db0a6d;
+    }
 
 
 /* Gallery Styles */
+.gallery {
+	margin-top: 7em;
+}
+
 .gallery h1, .gallery p {
 	color: #fff;
 }
 
-.gallery ul {margin: 0; padding: 0;}
+.gallery ul {
+	margin: 0; 
+	padding: 0;
+}
 
-    .gallery ul li {display: block; position: relative; overflow: hidden; margin-bottom: 1em; list-style-type: none; color: #47475c; background: none;}
+    .gallery ul li {
+    	display: block; 
+    	position: relative; 
+    	overflow: hidden; 
+    	margin-bottom: 1em; 
+    	list-style-type: none; 
+    	color: #47475c; 
+    	background: none;
+    }
     
     
-        /* Sets the blue background on gallery items to not show until hover listed below */
-        .gallery-header {width: 100%; height: 100%; position: absolute; padding: 2% 5%; color: #fff; opacity: 0; -webkit-transition: 0.35s;}
+        /* Sets the pinkish redish background on gallery items to not show until hover listed below */
+        .gallery-header {
+        	width: 100%; 
+        	height: 100%; 
+        	position: absolute; 
+        	padding: 2% 5%; 
+        	color: #fff; 
+        	opacity: 0; 
+        	transition: 0.35s;
+        }
         
-            .banner-ul a:hover .gallery-header, .banner-ul a:focus .gallery-header, .gallery-ul a:hover .gallery-header, .gallery-ul a:focus .gallery-header, .gallery-md-ul a:hover .gallery-header, .gallery-md-ul a:focus .gallery-header {background: rgba(219, 10, 109, 0.85); opacity: 1; -webkit-transition: 0.35s; clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);}
+            .banner-ul a:hover .gallery-header, .banner-ul a:focus .gallery-header, .gallery-ul a:hover .gallery-header, .gallery-ul a:focus .gallery-header, .gallery-md-ul a:hover .gallery-header, .gallery-md-ul a:focus .gallery-header {
+            	background: rgba(219, 10, 109, 0.85); 
+            	opacity: 1;
+            	transition: 0.35s; 
+            	clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+            }
             
-            .banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {margin-left: 0px; -webkit-transition: 0.35s;}
+            .banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {
+            	margin-left: 0px;
+            	transition: 0.35s;
+            }
     
-                .gallery-header h1 {margin: 0 0 0 -30px; font-size: 5em; font-weight: bold; -webkit-transition: 0.35s;}
+                .gallery-header h1 {
+                	margin: 0 0 0 -30px; 
+                	font-size: 5em; 
+                	font-weight: bold;
+                	transition: 0.35s;
+                }
             
-                .gallery-header p {font-size: 1em; margin: 2% 0 2% -70px; font-style: italic; -webkit-transition: 0.35s;}
-            
-            .banner-ul img {margin: 0;} /* Takes away default 1em top and bottom margin on the gallery images */
+                .gallery-header p {
+                	font-size: 1em; 
+                	margin: 2% 0 2% -70px; 
+                	font-style: italic;
+                	transition: 0.35s;
+                }
 
 
 /* about */
 /* Technology Used */
 .tech-used {
-	margin: 0 0 5em 0;
 	padding: 7em 0 4em 0;
 	color: #fff;
 	background: #1f2631;
@@ -204,10 +243,6 @@ img {
 		padding: 0 0 2em 0;
 		text-align: center;
 		font-weight: bold;
-	}
-
-	.tech-used ul {
-		padding-bottom: 3em;
 	}
 
 	.fa {
@@ -232,7 +267,7 @@ img {
 	}
 
 	.percent-circle {
-		margin: 2em auto 1em auto;
+		margin: 1.5em auto 1em auto;
 	    border-radius: 50%;
 	    width: 200px;
 	    height: 200px;
@@ -291,6 +326,12 @@ img {
 	}
 
 
+/* contact */
+.contact-form {
+	padding-top: 3em;
+}
+
+
 footer {
 	margin-top: 10em;
 	color: #acb4bf;
@@ -322,8 +363,12 @@ footer {
 			color: #db0a6d;
 		}
 
+	.copyright {
+		padding-top: 1em;
+	}
+
 	.social-networks-ul {
-		margin: 2em 0;
+		margin: 1em 0;
 	}
 
 		.social-networks-ul li {
@@ -332,28 +377,44 @@ footer {
 
 
 
+/* iPhones (portrait) ----------- */
+@media only screen and (min-width: 435px) {
+
+		.about-hobbies-row img.meat-deer-ah {
+			width: 82%;
+		}
+
+}
+
+
+
 /* iPhones (landscape) ----------- */
 @media only screen and (min-width: 560px) {    
     
     /* Gallery Styles */ 
-    .gallery ul li {float: left; width: 48%; margin: 1%;}
+    .gallery ul li {
+    	float: left; 
+    	width: 48%; 
+    	margin: 1%;
+    }
     
     
     /* Article Heading Styles */
-    /* Design & Development */
-    .article-header-img-contaianer-dd {}
-    
-    .article-header-description-dd {}
-    
-        .article-description-ul-dd {}
-        
-    .article-content-container {}
-    
+    /* Design & Development     
     .article-design-and-development-content {clear: left; width: 67%; margin: 0 0 0 5%; padding: 2em 0;}
     
     .logo-display {}
     
     .rwd-displays {max-width: 90%; margin: 2em 0 2em 5%;}
+
+    I made need these styles later
+
+    */
+
+    /* about hobbies */
+    .about-hobbies-row img.meat-deer-ah {
+			width: 60%;
+		}
     
 }
 
@@ -361,39 +422,50 @@ footer {
 /* iPads (portrait) ----------- */
 @media only screen and (min-width: 768px) {
    
-/* Design & Development */    
+	/* Design & Development     
    
     .article-header-img-contaianer-dd {height: 235px;}
     
     .article-content {width: 70%; padding: 0 15%;}
 
+    I made need these styles later
+
+    */
+
+    /* about technologies used */
+    .tech-used ul {
+		padding-bottom: 3em;
+	}
+
+	/* about hobbies */
+	.about-hobbies-row img.meat-deer-ah {
+			width: 45%;
+	}
+
 }
-
-
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-width: 900px) {
-    
-    /* ==================== Section Heading Styles ==================== */           
-    .section-heading {padding: 7em 0 12em 0;}
-
-    .contact-sh {
-	padding-bottom: 3em; /* this is only for the contact page. Otherwise the form would push too far below. */
-}
-    
-}
-
 
 
 /* 992px ----------- */
 @media only screen and (min-width: 992px) {
     
+    /* about hobbies */
+	.about-hobbies-row img.meat-deer-ah {
+			max-width: 100%;
+	}
+
     /* footer */
     footer .row {
     	margin: 2em 0 1em 0;
     }
 
-    .social-networks-ul {margin: 0; text-align: right;}
+    .copyright {
+		padding-top: 0;
+	}
+
+    .social-networks-ul {
+    	margin: 0; 
+    	text-align: right;
+    }
     
 }
 
@@ -403,10 +475,14 @@ footer {
 @media only screen and (min-width : 1024px) {     
     
     /* Article Heading Styles */
-    /* Design & Development */
+    /* Design & Development 
     .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 10%; margin-left: 10%;}
     
     .iphone-display img {float: left; width: 33%;}
+
+    I made need these styles later
+
+    */
     
 }
 
@@ -417,8 +493,12 @@ footer {
         
     
     /* Article Heading Styles */
-    /* Design & Development */
+    /* Design & Development 
     .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 20%; margin-left: 20%;}
+
+    I may need these styles later
+
+    */
     
 }
 
@@ -436,7 +516,11 @@ footer {
     
     
     /* Article Heading Styles */
-    /* Design & Development */
+    /* Design & Development 
     .article-dd h2, .article-dd h4, .article-dd p, .footer-main p {margin-right: 25%; margin-left: 25%;}
+
+    I may need these styles later
+
+    */
 
 }
