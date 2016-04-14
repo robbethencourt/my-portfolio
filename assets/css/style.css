@@ -62,6 +62,11 @@ img {
 	background: rgba(255,255,255,0.95);
 }
 
+	/* so that the navbar doesn't stay fixed on smaller screen sizes */
+	.navbar-fixed-top {
+		position: static;
+	}
+
 	.navbar-inverse .navbar-brand {
 		color: #acb4bf;
 	}
@@ -108,7 +113,7 @@ img {
 
 /* Jumbotron Styles */
 .jumbotron {
-	padding: 5em 0 2em 0;
+	padding: 1.5em 0 2em 0;
 	color: #1f2631;
 	background: #fff;
 }
@@ -421,6 +426,16 @@ footer {
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-width: 768px) {
+
+	/* so that the navbar does stay fixed on larger screen sizes */
+	.navbar-fixed-top {
+		position: fixed;
+	}
+
+	/* needs the adjusted padding as the navbar being fixed brings up the rest of the layout */
+	.jumbotron {
+		padding-top: 5em;
+	}
    
 	/* Design & Development     
    
@@ -450,7 +465,7 @@ footer {
     
     /* about hobbies */
 	.about-hobbies-row img.meat-deer-ah {
-			max-width: 100%;
+			width: inherit;
 	}
 
     /* footer */
