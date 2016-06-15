@@ -135,7 +135,7 @@ img {
 	}
 
 	.im-rob {
-		margin-top: -2em;
+		margin-top: 0;
 		padding: 0 0 3em 0;
 		text-align: center;
 	}
@@ -226,6 +226,13 @@ img {
                 	font-style: italic;
                 	transition: 0.35s;
                 }
+
+
+/* projects */
+/* content */
+.content {
+	padding: 5em 0 0 0;
+}
 
 
 /* about */
