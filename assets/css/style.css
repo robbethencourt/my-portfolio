@@ -164,6 +164,12 @@ img {
     	border-left: 3px solid #db0a6d;
     }
 
+    .section-heading h5 {
+		padding: 1.5em 0 0 0;
+		color: #1f2631;
+		font-style: italic;
+    }
+
 
 /* Gallery Styles */
 .gallery {
