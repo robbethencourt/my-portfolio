@@ -243,12 +243,22 @@ img {
 
 	.content h4 {
 		margin: 2em 0 .75em 0;
+		clear: left; /* used to clear iphone-display-2 images that are set to float left */
 	}
 
 	.content img {
 		margin: 50px 0;
 		box-shadow: 1px 15px 30px #ADB9C4;
 	}
+
+		.iphone-display-2 img, .iphone-display img {
+			box-shadow: none;
+		}
+
+		.iphone-display-2 img {
+			max-width: 50%;
+			float: left;
+		}
 
 
 /* about */
@@ -514,6 +524,10 @@ footer {
 		width: 60%;
 		margin-left: 20%;
 	}
+
+	.iphone-display-2 {
+		margin-left: 5%;
+	}
     
     /* Design & Development 
     
@@ -523,4 +537,14 @@ footer {
 
     */
     
+}
+
+
+
+@media only screen and (min-width : 1201px) {
+
+	.iphone-display-2 {
+		margin-left: 15%;
+	}
+
 }
