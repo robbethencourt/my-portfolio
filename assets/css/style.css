@@ -55,6 +55,24 @@ img {
 	background: #1f2631 url(../images/polygon-bg.jpg) no-repeat 5px center;
 }
 
+p.link-button-wrapper {
+	margin: 100px auto 50px auto;
+}
+
+	a.btn-pink {
+		transition: 0.3s;
+		color: #fff;
+		background: #db0a6d;
+	}
+
+	a.btn-pink:hover, a.btn-pink:focus {
+		transition: 0.3s;
+		color: #fff;
+		background: #1f2631;
+	}
+
+
+
 
 /* Navbar Styles */
 .navbar {
@@ -243,7 +261,6 @@ img {
 
 	.content h4 {
 		margin: 2em 0 .75em 0;
-		clear: left; /* used to clear iphone-display-2 images that are set to float left */
 	}
 
 	.content img {
