@@ -189,10 +189,20 @@ p.link-button-wrapper {
 		font-style: italic;
     }
 
+/* for separation from the bottom of the UCF project section and the design & development section heading */
+.dandd-sh {
+	margin-top: 100px;
+}
+
 
 /* Gallery Styles */
 .gallery {
 	margin-top: 7em;
+}
+
+.gallery-heading {
+	padding: 150px 0 20px 0;
+	text-align: center;	
 }
 
 .gallery h1, .gallery p {
