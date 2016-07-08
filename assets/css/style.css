@@ -278,7 +278,7 @@ p.link-button-wrapper {
 		box-shadow: 1px 15px 30px #ADB9C4;
 	}
 
-		.iphone-display-2 img, .iphone-display img {
+		.iphone-display-2 img, .iphone-display img, img.logo-display, img.rwd-displays {
 			box-shadow: none;
 		}
 
@@ -468,19 +468,15 @@ footer {
 		width: 80%;
 		margin-left: 10%;
 	}
-    
-    /* Design & Development     
-    
-    .rwd-displays {max-width: 90%; margin: 2em 0 2em 5%;}
-
-    I made need these styles later
-
-    */
 
     /* about hobbies */
     .about-hobbies-row img.meat-deer-ah {
-			width: 60%;
-		}
+		width: 60%;
+	}
+
+	.iphone-display img {
+    	float: left; width: 33%;
+    }
     
 }
 
@@ -556,14 +552,6 @@ footer {
 		margin-left: 5%;
 	}
     
-    /* Design & Development 
-    
-    .iphone-display img {float: left; width: 33%;}
-
-    I made need these styles later
-
-    */
-    
 }
 
 
@@ -572,6 +560,14 @@ footer {
 
 	.iphone-display-2 {
 		margin-left: 15%;
+	}
+
+	img.logo-display {
+		margin-left: 10%;
+	}
+
+	img.rwd-displays {
+		margin-left: 5%;
 	}
 
 }
