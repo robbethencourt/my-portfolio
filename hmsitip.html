@@ -6,7 +6,7 @@
 		<meta name="description" content="Rob Bethencourt's portfolio">
 		<meta name="author" content="Rob Bethencourt">
 
-		<title>Rob's Portfolio | Hangman</title>
+		<title>Rob's Portfolio | How Much Should I Tip?</title>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -42,8 +42,8 @@
 
 		<!-- jumbotron -->
 		<div class="jumbotron">
-			<h1>hangman</h1>
-			<p class="im-rob">// html css javaScript</p>
+			<h1>how much should i tip?</h1>
+			<p class="im-rob">// logo html css javaScript</p>
 		</div>
 
 		<!-- About Section -->
@@ -51,9 +51,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-                        <h2>hangman</h2>
-                        <p class="article-h2-content">key press hangman JS game with a sans-serif theme</p>
-                        <h5>created at the UCF Coding Bootcamp / 2016</h5>
+                        <h2>how much should i tip?</h2>
+                        <p class="article-h2-content">an HTML5 web application that calculates tips. the js is a yikes!!! I'd do things differently after going through the UCF Coding Bootcamp</p>
+                        <h5>created / 2013</h5>
                     </div>
                 </div>
             </div>
@@ -64,20 +64,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4>Minimal Style</h4>
-                        <p>I wanted a minimal style for the look of the game with an emphasis on clearly seeing the word to be constructed and the letters that had been used. We were also discussing some typographic concepts during class that week that lead me to the idea of using sans-serif typefaces as the game's theme.</p>
-                        <img src="assets/images/hangman-full-1.jpg" alt="Initial Hangman game screen" />
-                        <h4>Vanilla JS</h4>
-                        <p>This project was created before we got into jQuery so it's gloriously vanilla, which I enjoy writing. I used document.onkeyup to capture the keyboard press events for the main functioinality of the game and got exposed to objects and methods. Lots of fun.</p>
-                        <h4>Hangman's Sense of Impending Doom</h4>
-                        <p>I remember the sense of doom that would build when I played this game as a kid. Most would exagerate the look of the hanging man. I didn't want to be that graphic, but still wanted to impart the tension that builds as you get closer to the noose.</p>
-                        <img src="assets/images/hangman-full-2.jpg" alt="Hangman game screen with letters incorrectly chosen to show the red bars across the screen." />
-                        <p>I got the idea to slowly fade in bars of red across the screen as players incorrectly guess from looking at <a href="https://www.google.com/search?q=red+swiss+type+posters&espv=2&biw=2182&bih=1106&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiSiYuCqqrNAhXBpx4KHcsLDaEQ_AUIBigB#tbm=isch&q=red+swiss+typography+posters" target="_blank">red Swiss typography posters</a>. It seems to work great, as the bars become incrmentally reder as each one appears.</p>
-                        <img src="assets/images/hangman-full-3.jpg" alt="Hangman game win screen." />
-                        <h4>Warp World ?</h4>
-                        <p>secrets are fun to discover in games. So I implemented a color mode if the player guesses all possible words. It can take a bit to get to as the words are Math.floor(Math.Random())-ly generated, but the game lets you know how many unique words you've guessed and hints at the unlockable color theme to tease the player to continue playing.</p>
-                        <img src="assets/images/hangman-full-4.jpg" alt="Hangman game with secret color background if all words have been correctly chosen." />
-                        <p class="link-button-wrapper"><a href="https://robbethencourt.github.io/week-3-game/" target="_blank" class="btn btn-lg btn-block btn-pink"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Play Hangman</a></p>
+                        <div class='ac-logo'>
+                            <img src="assets/images/hmsitip-logo-display.jpg" alt="" class="logo-display" />
+                            <h2>Logo</h2>
+                            <p class="article-h2-content">The logo needed to convey a sense of fun, which is what this tip app strives for with its tip list.</p>
+                        </div>
+                        <div class="ac-web">
+                            <div class="iphone-display clearfix">
+                                <img src="assets/images/hmsitip-home-screen-iphone-display.jpg" alt="" />
+                                <img src="assets/images/hmsitip-fly-out-nav-iphone-display.jpg" alt="" />
+                                <img src="assets/images/hmsitip-calculator-screen-iphone-display.jpg" alt="" />
+                            </div>
+                            <h2>Web</h2>
+                            <p class="article-h2-content">The website is meant to let users scroll through an array of possible services, save those to their favorites section, and make getting tip amounts easy to calculate and read.</p>
+                        </div>
+                        <h4>Do I Really Need jQuery For This&#63;</h4>
+                        <p>The <a href="http://howmuchshoulditip.info/">HMSITIP?</a> website is a personal project of mine. I wanted to create an HTML5 web application that would run without the use of a javaScript library. All the js is vanilla, something I'm quite proud of.</p>
+                        <h4>Some JS Extras</h4>
+                        <p>The Favorites section uses Web Storage to save the services a user refers to most often, a convenient tool that lets frequent users skip the navigation, which is primarily there to help someone who is trying to find an obscure service. The entire site is also one page. The purpose of this was to minimize the need for an internet connection and save users some bandwidth, as most often the application would be used out in public, and wifi options may not be available.</p>
+                        <h4>I Have No Idea What To Tip</h4>
+                        <p>The two other goals of the <a href="http://howmuchshoulditip.info/">HMSITIP?</a> website are to provide a comprehensive tipping guide for services that may not be frequently used, and to make the entering and reading of the tip amounts easy. Many of these have suggested tipping percentages different from the standard 18% to 20%. The <a href="http://howmuchshoulditip.info/">HMSITIP?</a> website is therefore, part guide.
+                        <p class="link-button-wrapper"><a href="http://howmuchshoulditip.info/" target="_blank" class="btn btn-lg btn-block btn-pink"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> How Much Should I Tip?</a></p>
                     </div>
                 </div>
             </div>
