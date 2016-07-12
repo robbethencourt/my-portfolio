@@ -26,3 +26,19 @@ $(document).ready(function(){
 	}); // end scroll script
 
 }); // end jQuery document ready
+
+function expandingList() {
+	
+	var list_items = document.getElementsByClassName('list-item');
+
+	var strike_throughs = document.getElementsByClassName('strike-th');
+
+	var list_percent = document.getElementById('list-percent');
+
+	var the_percent = (list_items.length - strike_throughs.length) / list_items.length;
+
+	console.log(the_percent);
+
+}
+
+expandingList();
