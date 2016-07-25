@@ -392,10 +392,29 @@ p.link-button-wrapper {
 
 
 /* contact */
+.contact {
+	background: #fff;
+}
+
+	h2.mail-link-h2 {
+		margin: .5em 0;
+		font-size: 10em;
+		text-align: center;
+	}
+
+		.contact a, .contact a:link {
+			color: #1f2631;
+		}
+
+		.contact a:hover, .contact a:focus {
+			color: #db0a6d;
+		}
+
+/* if i ever want to use a contact form this is the styling
 .contact-form {
 	padding-top: 3em;
 }
-
+*/
 
 footer {
 	margin-top: 10em;
