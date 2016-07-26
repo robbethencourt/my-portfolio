@@ -305,9 +305,8 @@ p.link-button-wrapper {
 	}
 
 	.tech-used > h2 {
-		padding: 0 0 2em 0;
+		padding: 0;
 		text-align: center;
-		font-weight: bold;
 	}
 
 	.fa {
@@ -316,6 +315,7 @@ p.link-button-wrapper {
 
 	.progress {
 		height: 3px;
+		border-radius: 0;
 	}
 
 		.progress-bar {
@@ -329,6 +329,11 @@ p.link-button-wrapper {
 
 	.ever-expanding h2 {
 		padding: 2em 0 3em 0;
+	}
+
+	.ever-expanding ul {
+		padding: 0;
+		list-style-type: none;
 	}
 
 	.percent-circle {
