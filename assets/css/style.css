@@ -12,12 +12,12 @@ p {
 
 a:link, a:visited {
 	transition: 0.3s;
-    color: #36a6dd;
+    color: #db0a6d;
 }
 
 a:hover, a:focus {
 	transition: 0.3s;
-	color: #db0a6d;
+	color: #1f2631;
 }
 
 img {
